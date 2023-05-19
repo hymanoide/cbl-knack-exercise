@@ -1,0 +1,36 @@
+{
+  "name": "cbl-knack-exercise",
+  "version": "1.0.0",
+  "description": "Node.js application to remove all duplicated fields from a given mock applicattion schema and output a new sanitized json version.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "npx jest",
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hymanoide/cbl-knack-exercise.git"
+  },
+  "keywords": [
+    "sanitize",
+    "knack",
+    "schema"
+  ],
+  "author": "Cesar Benitez",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/hymanoide/cbl-knack-exercise/issues"
+  },
+  "homepage": "https://github.com/hymanoide/cbl-knack-exercise#readme",
+  "dependencies": {
+    "@types/node": "^20.2.0",
+    "fs": "0.0.1-security",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1"
+  }
+}

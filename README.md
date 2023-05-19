@@ -63,10 +63,10 @@ ts-node src/index.ts
 
 You shoud view on console the message "Sanitization process finished" if all worked fine. 
 
-Also, the project has a basic test in folder `__tests__` made with "Jest". Simply run `nmp test` command script to run it.
+Also, the project has a basic test in folder `__tests__` made with "Jest". Simply run `npm test` command script to run it.
 
 ```
-ts-node src/index.ts
+npm test
 ```
 
 ## Contributing

@@ -2,7 +2,7 @@
 /**
  * Sanitizing exercise for Knack
  *
- * @author Cesar Benítez <cesar.beni@email.com>
+ * @author Cesar Benítez <cesar.beni@gmail.com>
  *
  * The purpose of this coding exercise is to create a Node.js application that can programmatically
  * remove all duplicate fields and objects from the given mock application schema and output a new

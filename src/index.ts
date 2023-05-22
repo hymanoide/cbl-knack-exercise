@@ -14,13 +14,9 @@ import {Schema} from "./interfaces";
 import {getDistinctObjects} from "./helpers";
 import path from "path";
 
-// console.log('Sanitation process started');
-
 // Read and parse the "mock_application.json" file
 const rawSchema = fs.readFileSync(path.resolve(__dirname, './data/mock_application.json'), 'utf-8');
 const schema: Schema = JSON.parse(rawSchema);
-
-// (schema) ? console.log('JSON parsed') : console.log("Can't parse JSON");
 
 try {
     // Iterate over all versions
@@ -46,7 +42,6 @@ try {
 
     // Write the sanitized schema to "sanitized_application.json"
     fs.writeFileSync(path.resolve(__dirname, './data/clean_application.json'), JSON.stringify(schema, null, 2));
-    // console.log('Schema sanitized: sanitized_application.json');
 
 } catch (e: any) {
     console.log('An error ocurred. Error:' + e.name);

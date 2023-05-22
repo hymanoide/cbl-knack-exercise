@@ -44,7 +44,7 @@ try {
     fs.writeFileSync(path.resolve(__dirname, './data/clean_application.json'), JSON.stringify(schema, null, 2));
 
 } catch (e: any) {
-    console.log('An error ocurred. Error:' + e.name);
+    console.log('An error occurred. Error:' + e.name);
     console.log(e.message);
 
 } finally {

@@ -15,7 +15,7 @@ export interface Schema {
     status: string;
     settings: [];
     tasks: [];
-    payment_precessors: [];
+    payment_processors: [];
     design: object;
     layout: object;
     copying: boolean;

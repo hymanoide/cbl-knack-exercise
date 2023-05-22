@@ -14,7 +14,6 @@ import {Schema} from "./interfaces";
 import {getDistinctObjects} from "./helpers";
 import path from "path";
 
-
 // console.log('Sanitation process started');
 
 // Read and parse the "mock_application.json" file

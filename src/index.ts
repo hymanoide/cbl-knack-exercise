@@ -24,9 +24,9 @@ const schema: Schema = JSON.parse(rawSchema);
 // (schema) ? console.log('JSON parsed') : console.log("Can't parse JSON");
 
 try {
-    // Iterave over all versions
+    // Iterate over all versions
     schema.versions.forEach(version => {
-        // Get distints of parent object/scenes
+        // Get distinct of parent object/scenes
         let distinctObjects = getDistinctObjects(version.objects, 'key');
         let distinctScenes = getDistinctObjects(version.scenes, 'key');
         // Get distinct fields for each distinct object.
@@ -39,7 +39,7 @@ try {
         });
         // Replace the original Schema with new one that is sanitized.
         // Decided to replace the same Schema object due memory usage, instead of creating a new one.
-        // If we'ld need to save this duplicates probably I'll decide to safe original data.
+        // If we'd need to save these duplicates probably I'll decide to save original data.
         version.objects = distinctObjects;
         version.scenes = distinctScenes;
     });
